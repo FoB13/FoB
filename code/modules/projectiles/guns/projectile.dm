@@ -33,6 +33,9 @@
 	//var/list/icon_keys = list()		//keys
 	//var/list/ammo_states = list()	//values
 
+	var/is_jammed = 0           //Whether this gun is jammed
+	var/jam_chance = 0          //Chance it jams on fire
+
 /obj/item/weapon/gun/projectile/New(loc, var/starts_loaded = 1)
 	..()
 	if(starts_loaded)
@@ -45,6 +48,20 @@
 	update_icon()
 
 /obj/item/weapon/gun/projectile/consume_next_projectile()
+	if(!is_jammed && prob(jam_chance))
+		src.visible_message("<span class='danger'>\The [src] jams!</span>")
+		is_jammed = 1
+/*		var/mob/user = loc
+		if(istype(user))
+			var/job = M.mind.assigned_role
+			if(job != "Detective" && job != "Security Officer" && job != "Warden" && job != "Head of Security")
+				return null
+			else
+				to_chat(user, "<span class='notice'>You reflexively clear the jam on \the [src].</span>")
+				is_jammed = 0
+				playsound(src.loc, 'sound/weapons/flipblade.ogg', 50, 1)*/
+	if(is_jammed)
+		return null
 	//get the next casing
 	if(loaded.len)
 		chambered = loaded[1] //load next casing.
@@ -171,6 +188,12 @@
 
 //attempts to unload src. If allow_dump is set to 0, the speedloader unloading method will be disabled
 /obj/item/weapon/gun/projectile/proc/unload_ammo(mob/user, var/allow_dump=1)
+	if(is_jammed)
+		user.visible_message("\The [user] begins to unjam [src].", "You clear the jam and unload [src]")
+		if(!do_after(user, 4, src))
+			return
+		is_jammed = 0
+		playsound(src.loc, 'sound/weapons/flipblade.ogg', 50, 1)
 	if(ammo_magazine)
 		user.put_in_hands(ammo_magazine)
 		user.visible_message("[user] removes [ammo_magazine] from [src].", "<span class='notice'>You remove [ammo_magazine] from [src].</span>")
@@ -231,6 +254,8 @@
 
 /obj/item/weapon/gun/projectile/examine(mob/user)
 	. = ..()
+	if(is_jammed)
+		to_chat(user, "<span class='warning'>It looks jammed.</span>")
 	if(ammo_magazine)
 		. += "It has \a [ammo_magazine] loaded."
 	. += "It has [getAmmo()] round\s remaining."
