@@ -17,7 +17,7 @@
 
 	flags =            NO_SCAN | NO_SLIP | NO_MINOR_CUT | NO_HALLUCINATION | NO_INFECT | NO_PAIN
 	appearance_flags = HAS_SKIN_COLOR | HAS_EYE_COLOR | HAS_HAIR_COLOR | HAS_UNDERWEAR | HAS_LIPS
-	spawn_flags		 = SPECIES_CAN_JOIN | SPECIES_IS_WHITELISTED | SPECIES_WHITELIST_SELECTABLE
+	spawn_flags		 = SPECIES_CAN_JOIN// | SPECIES_IS_WHITELISTED | SPECIES_WHITELIST_SELECTABLE
 	health_hud_intensity = 2
 	num_alternate_languages = 3
 	assisted_langs = list(LANGUAGE_ROOTLOCAL, LANGUAGE_ROOTGLOBAL, LANGUAGE_VOX)
@@ -170,7 +170,7 @@
 		H.forceMove(H.temporary_form.drop_location())
 		H.ckey = H.temporary_form.ckey
 		QDEL_NULL(H.temporary_form)
-	
+
 	to_chat(H, "<span class='warning'>You died as a Protean. Please sit out of the round for at least 60 minutes before respawning, to represent the time it would take to ship a new-you to the station.</span>")
 
 	for(var/obj/item/organ/I in H.internal_organs)

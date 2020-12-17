@@ -38,7 +38,7 @@
 
 /datum/map_template/tether_lateload/tether_plains
 	name = "Tether - Plains"
-	desc = "The Virgo 3B away mission."
+	desc = "The Aeacus-G8 away mission."
 	mappath = 'tether_plains.dmm'
 	associated_map_datum = /datum/map_z_level/tether_lateload/tether_plains
 
@@ -217,7 +217,7 @@
 #include "../../expedition_vr/aerostat/_aerostat.dm"
 /datum/map_template/tether_lateload/away_aerostat
 	name = "Remmi Aerostat - Z1 Aerostat"
-	desc = "The Virgo 2 Aerostat away mission."
+	desc = "The Aerostat away mission."
 	mappath = 'maps/expedition_vr/aerostat/aerostat.dmm'
 	associated_map_datum = /datum/map_z_level/tether_lateload/away_aerostat
 
@@ -228,7 +228,7 @@
 
 /datum/map_template/tether_lateload/away_aerostat_surface
 	name = "Remmi Aerostat - Z2 Surface"
-	desc = "The surface from the Virgo 2 Aerostat."
+	desc = "The surface from the Aerostat."
 	mappath = 'maps/expedition_vr/aerostat/surface.dmm'
 	associated_map_datum = /datum/map_z_level/tether_lateload/away_aerostat_surface
 

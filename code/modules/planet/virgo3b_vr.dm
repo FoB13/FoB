@@ -4,7 +4,7 @@ var/datum/planet/virgo3b/planet_virgo3b = null
 	seconds_in_day = 3 HOURS
 
 /datum/planet/virgo3b
-	name = "Virgo-3B"
+	name = "Aeacus-G8"
 	desc = "A mid-sized moon of the Virgo 3 gas giant, this planet has an atmosphere mainly comprised of phoron, with trace \
 	amounts of both oxygen and nitrogen. Fortunately, the oxygen is not enough to be combustible in any meaningful way, however \
 	the phoron is desirable by many corporations, including NanoTrasen."
@@ -398,7 +398,7 @@ var/datum/planet/virgo3b/planet_virgo3b = null
 				if(show_message)
 					to_chat(H, "<span class='notice'>Hail patters onto your umbrella.</span>")
 				continue
-		
+
 			var/target_zone = pick(BP_ALL)
 			var/amount_blocked = H.run_armor_check(target_zone, "melee")
 			var/amount_soaked = H.get_armor_soak(target_zone, "melee")

@@ -1,6 +1,6 @@
 /*
 LORE:
-Gaslamps are a phoron-based life form endemic to the world of Virgo-3B. They are
+Gaslamps are a phoron-based life form endemic to the world of Aeacus-G8. They are
 a sort of fungal organism with physical ties to Diona and Vox, deriving energy
 for movement from a gentle combustion-like reaction in their bodies using
 atmospheric phoron, carefully filtered trace oxygen, and captured meat products.
@@ -17,7 +17,7 @@ TODO: Make them light up and heat the air when exposed to oxygen.
 
 /mob/living/simple_mob/animal/passive/gaslamp
 	name = "gaslamp"
-	desc = "Some sort of floaty alien with a warm glow. This creature is endemic to Virgo-3B."
+	desc = "Some sort of floaty alien with a warm glow. This creature is endemic to Aeacus-G8."
 	tt_desc = "Semaeostomeae virginus"
 	catalogue_data = list(/datum/category_item/catalogue/fauna/gaslamp)
 

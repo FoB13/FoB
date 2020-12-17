@@ -47,15 +47,15 @@
 		lobby_screens = list(choice)
 
 /datum/map/tether
-	name = "Virgo"
-	full_name = "NSB Adephagia"
+	name = "Aeacus"
+	full_name = "NRF Hecate"
 	path = "tether"
 
 	use_overmap = TRUE
 	overmap_z = Z_LEVEL_MISC
 	overmap_size = 35
 	overmap_event_areas = 34
-	usable_email_tlds = list("virgo.nt")
+	usable_email_tlds = list("hecate.nt")
 
 	zlevel_datum_type = /datum/map_z_level/tether
 
@@ -71,15 +71,15 @@
 		Z_LEVEL_SPACE_MID,
 		Z_LEVEL_SPACE_HIGH))
 
-	station_name  = "NSB Adephagia"
+	station_name  = "NRF Hecate"
 	station_short = "Tether"
-	dock_name     = "Virgo-3B Colony"
+	dock_name     = "Aeacus-G8 Colony"
 	dock_type     = "surface"
 	boss_name     = "Central Command"
 	boss_short    = "CentCom"
 	company_name  = "NanoTrasen"
 	company_short = "NT"
-	starsys_name  = "Virgo-Erigone"
+	starsys_name  = "Myrmidon-Prime"
 
 	shuttle_docked_message = "The scheduled Orange Line tram to the %dock_name% has arrived. It will depart in approximately %ETD%."
 	shuttle_leaving_dock = "The Orange Line tram has left the station. Estimate %ETA% until the tram arrives at %dock_name%."
@@ -231,7 +231,7 @@
 
 // Overmap represetation of tether
 /obj/effect/overmap/visitable/sector/virgo3b
-	name = "Virgo 3B"
+	name = "Aeacus-G8"
 	desc = "Full of phoron, and home to the NSB Adephagia, where you can dock and refuel your craft."
 	scanner_desc = @{"[i]Registration[/i]: NSB Adephagia
 [i]Class[/i]: Installation

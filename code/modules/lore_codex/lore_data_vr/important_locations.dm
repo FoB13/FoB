@@ -1,6 +1,6 @@
 /datum/lore/codex/category/important_locations
 	name = "Important Locations"
-	data = "There are several locations of interest that you may come across when visiting the system Virgo-Erigone."
+	data = "There are several locations of interest that you may come across when visiting the system Myrmidon-Prime."
 	children = list(
 		/datum/lore/codex/page/virgo_erigone,
 		/datum/lore/codex/page/radiance_energy_chain,
@@ -15,14 +15,14 @@
 		)
 
 /datum/lore/codex/page/virgo_erigone/add_content()
-	name = "Virgo-Erigone (Star System)"
-	keywords += list("Virgo-Erigone")
-	data = "Virgo-Erigone is a dimming and dying star with a warm yellow/orange glow like that of burning candle. It has eight planets in its orbit.\
+	name = "Myrmidon-Prime (Star System)"
+	keywords += list("Myrmidon-Prime")
+	data = "Myrmidon-Prime is a dimming and dying star with a warm yellow/orange glow like that of burning candle. It has eight planets in its orbit.\
 	<br><br>\
 	Also known as 'Virgo', the system is most notable for the presence of one of only two known [quick_link("Phoron")] gas giants, designated [quick_link("Virgo 3")]. This makes the \
 	system a popular location for Phoron research and refining.\
 	<br><br>\
-	Virgo-Erigone is mainly administered by [quick_link("Virgo-Erigone Governmental Authority","the Virgo-Erigone Governmental Authority")], which is owned by [quick_link("NanoTrasen")],\
+	Myrmidon-Prime is mainly administered by [quick_link("Myrmidon-Prime Governmental Authority","the Myrmidon-Prime Governmental Authority")], which is owned by [quick_link("NanoTrasen")],\
 	as it resides over 30,000 lightyears away from [quick_link("SolGov")]'s sphere of influence. Despite its isolation, it generally abides by Sol's laws, as NanoTrasen is a human-owned \
 	company."
 
@@ -31,7 +31,7 @@
 	keywords += list("Radiance Energy Chain", "R.E.C.")
 	data = "A sparse government-owned chain of automated stations exists between [quick_link("Virgo 3")] and the star itself, known as the Radiance Energy Chain. The idea is based on \
 	an ancient design that was pioneered at Sol. The stations are heavily shielded from the stellar radiation, and feature massive \
-	arrays of photo-voltaic panels. Each station harvests energy from Virgo-Erigone using the solar panels, and sends it to other areas of \
+	arrays of photo-voltaic panels. Each station harvests energy from Myrmidon-Prime using the solar panels, and sends it to other areas of \
 	the system by beaming the energy to several relay stations farther away from the star, typically with a large laser.\
 	<br><br>\
 	These stations are generally devoid of life, instead, they are operated mainly by [quick_link("drones")], with maintenance performed \
@@ -47,7 +47,7 @@
 /datum/lore/codex/page/virgo_two/add_content()
 	name = "Virgo 2 (Metal-Rich Planet)"
 	keywords += list("Virgo 2")
-	data = "The second closest planet to [quick_link("Virgo-Erigone")], this planet has a high concentration of minerals inside its crust, as well as active volcanism and plate tectonics.  \
+	data = "The second closest planet to [quick_link("Myrmidon-Prime")], this planet has a high concentration of minerals inside its crust, as well as active volcanism and plate tectonics.  \
 	The temperature on the surface can reach up to 405 degrees kelvin (132°C) due to the relatively high albedo of the surface, which has deterred most people from the planet, except for two [quick_link("TSC", "TSCs")], \
 	Greyson Manufactories and [quick_link("Xion Manufacturing Group")]. In orbit, the two companies each have a space station, used to coordinate and \
 	control their stations on the surface without having to suffer the intense heat. Xion's station also doubles as a control and oversight facility for their \
@@ -66,24 +66,24 @@
 	name = "Virgo 3 (Phoron Giant)"
 	keywords += list("Virgo 3")
 	data = "Virgo 3 is one of only two gas giants composed primarily of [quick_link("Phoron")] in the known galaxy. This fact has attracted several [quick_link("TSC", "TSCs")] into \
-	the system to exploit the resources available here for mining and research. Virgo 3 itself has several moons, though the only noteworthy moon is [quick_link("Virgo-3B")] which \
+	the system to exploit the resources available here for mining and research. Virgo 3 itself has several moons, though the only noteworthy moon is [quick_link("Aeacus-G8")] which \
 	has native life and an abundance of phoron deposits, as well as a phoron rich atmosphere. \
 	<br><br>\
 	The largest TSC to exploit this planet is none other than Phoron research giant [quick_link("NanoTrasen")], having built several stations orbiting the planet \
 	for both research and phoron refining purposes."
 
 /datum/lore/codex/page/virgo_three_bee/add_content()
-	name = "Virgo-3B (Terrestrial Moon)"
-	keywords += list("Virgo-3B")
-	data = "Virgo-3B is the only moon of [quick_link("Virgo 3")] with any atmosphere to speak of, composed primarily of [quick_link("Phoron")] and carbon dioxide with trace amounts of nitrogen. \
+	name = "Aeacus-G8 (Terrestrial Moon)"
+	keywords += list("Aeacus-G8")
+	data = "Aeacus-G8 is the only moon of [quick_link("Virgo 3")] with any atmosphere to speak of, composed primarily of [quick_link("Phoron")] and carbon dioxide with trace amounts of nitrogen. \
 	The atmosphere appears to have given rise to native life, though originally nothing bigger than small insects in terms of fauna. The flora of the planet is rather sizable, though typically blue in hue \
 	due to the atmospheric composition.\
 	<br><br>\
-	Virgo-3B is tidally locked to Virgo 3, and is currently in the 'cold phase' of Virgo 3's orbit. The 'day' consists of reflected light from the surface of Virgo 3, while the 'night' consists of a total eclipse of \
-	Virgo-Erigone by Virgo 3, leaving the planet fairly cold for a terrestrial world.\
+	Aeacus-G8 is tidally locked to Virgo 3, and is currently in the 'cold phase' of Virgo 3's orbit. The 'day' consists of reflected light from the surface of Virgo 3, while the 'night' consists of a total eclipse of \
+	Myrmidon-Prime by Virgo 3, leaving the planet fairly cold for a terrestrial world.\
 	<br><br>\
 	The presence of several [quick_link("TSC", "TSCs")] on the surface has introduced new life forms to the planet via bioengineering, and now several 'new' species are commonly sighted per year. \
-	Currently, [quick_link("NanoTrasen")] is constructing a 'space elevator' for commercial purposes, as the atmosphere of Virgo-3B is inimical to shuttles, and engines in particular."
+	Currently, [quick_link("NanoTrasen")] is constructing a 'space elevator' for commercial purposes, as the atmosphere of Aeacus-G8 is inimical to shuttles, and engines in particular."
 
 /datum/lore/codex/page/virgo_prime/add_content() // Virgo 4 technically.
 	name = "Virgo 4 / Virgo-Prime (Terrestrial Planet)"
@@ -120,11 +120,11 @@
 	name = "Virgo Central Command (Colony)"
 	keywords += list("Virgo Central Command")
 	data = "<i>This page has been ripped out. Odd.</i>"
-	/*data = "The Virgo Central Command is a large facility on [quick_link("Virgo-3B")] which handles the loading and \
+	/*data = "The Virgo Central Command is a large facility on [quick_link("Aeacus-G8")] which handles the loading and \
 	unloading, refuelling, and general maintenance of large spacecraft. The main structure is owned by \
 	[quick_link("NanoTrasen")], but individual offices, docking/loading bays, and warehouses are often leased to individuals \
-	or organisations.  The position of the spaceport allows it to function not only as a key node for transport inside the Virgo-Erigone \
-	system, especially to and from the planet Virgo 3, but also as a key stopping point for interstellar craft travelling via Virgo-Erigone which need refuelling. \
+	or organisations.  The position of the spaceport allows it to function not only as a key node for transport inside the Myrmidon-Prime \
+	system, especially to and from the planet Virgo 3, but also as a key stopping point for interstellar craft travelling via Myrmidon-Prime which need refuelling. \
 	<br><br>\
 	The station itself is mostly designed around its logistical and commercial needs, and although other strategically-placed \
 	nearby facilities owned by a mixture of corporations and entities may possess habitation space, the port itself is not \
@@ -134,8 +134,8 @@
 /datum/lore/codex/page/nsb_adephagia/add_content()
 	name = "NSB Adephagia (Space Elevator)"
 	keywords += list("NSB Adephagia", "Tether")
-	data = "Also known as the 'Tether', the NSB Adephagia is one of the most prominent installations in the [quick_link("Virgo-Erigone")] star system. \
-	Owned and operated by [quick_link("NanoTrasen")], the facility was built on [quick_link("Virgo-3B")] in 2561 to provide easy access to mining \
+	data = "Also known as the 'Tether', the NSB Adephagia is one of the most prominent installations in the [quick_link("Myrmidon-Prime")] star system. \
+	Owned and operated by [quick_link("NanoTrasen")], the facility was built on [quick_link("Aeacus-G8")] in 2561 to provide easy access to mining \
 	operations on the surface. Both phoron and alien artifacts are often found in the rocks, provoking substantial scientific interest into the moon's \
 	largely unknown history.\
 	<br><br>\

@@ -94,8 +94,8 @@
 		)
 	docking_controller_tag = "merc_shuttle"
 	announcer = "Automated Traffic Control"
-	arrival_message = "Attention. An unregistered vessel is approaching Virgo-3B."
-	departure_message = "Attention. A unregistered vessel is now leaving Virgo-3B."
+	arrival_message = "Attention. An unregistered vessel is approaching Aeacus-G8."
+	departure_message = "Attention. A unregistered vessel is now leaving Aeacus-G8."
 	defer_initialisation = TRUE
 	move_direction = WEST
 
@@ -125,8 +125,8 @@
 		)
 	docking_controller_tag = "ninja_shuttle"
 	announcer = "Automated Traffic Control"
-	arrival_message = "Attention. An unregistered vessel is approaching Virgo-3B."
-	departure_message = "Attention. A unregistered vessel is now leaving Virgo-3B."
+	arrival_message = "Attention. An unregistered vessel is approaching Aeacus-G8."
+	departure_message = "Attention. A unregistered vessel is now leaving Aeacus-G8."
 	defer_initialisation = TRUE
 	move_direction = NORTH
 
@@ -156,8 +156,8 @@
 		)
 	//docking_controller_tag = ??? doesn't have one?
 	announcer = "Automated Traffic Control"
-	arrival_message = "Attention. An unregistered vessel is approaching Virgo-3B."
-	departure_message = "Attention. A unregistered vessel is now leaving Virgo-3B."
+	arrival_message = "Attention. An unregistered vessel is approaching Aeacus-G8."
+	departure_message = "Attention. A unregistered vessel is now leaving Aeacus-G8."
 	defer_initialisation = TRUE
 	move_direction = NORTH
 
@@ -187,8 +187,8 @@
 		)
 	docking_controller_tag = "ert1_control"
 	announcer = "Automated Traffic Control"
-	arrival_message = "Attention. An NT support vessel is approaching Virgo-3B."
-	departure_message = "Attention. A NT support vessel is now leaving Virgo-3B."
+	arrival_message = "Attention. An NT support vessel is approaching Aeacus-G8."
+	departure_message = "Attention. A NT support vessel is now leaving Aeacus-G8."
 	defer_initialisation = TRUE
 	move_direction = WEST
 

@@ -22,7 +22,7 @@ var/global/list/citizenship_choices = list(
 	"Moghes",
 	"Meralar",
 	"Qerr'balak",
-	"Virgo 3b Colony",
+	"Aeacus-G8 Colony",
 	"Virgo 4 NT Compound",
 	"Venus",
 	"Tiamat",
@@ -30,7 +30,7 @@ var/global/list/citizenship_choices = list(
 	)
 
 var/global/list/home_system_choices = list(
-	"Virgo-Erigone",
+	"Myrmidon-Prime",
 	"Sol",
 	"Proxima Centauri",
 	"Procyon",

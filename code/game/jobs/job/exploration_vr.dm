@@ -77,7 +77,7 @@ var/const/SAR 				=(1<<14)
 	access = list(access_pilot)
 	minimal_access = list(access_pilot)
 	outfit_type = /decl/hierarchy/outfit/job/pilot
-	job_description = "A Pilot flies the various shuttles in the Virgo-Erigone System."
+	job_description = "A Pilot flies the various shuttles in the Myrmidon-Prime System."
 	alt_titles = list("Co-Pilot" = /datum/alt_title/co_pilot, "Navigator" = /datum/alt_title/navigator)
 
 /datum/alt_title/co_pilot

@@ -25,10 +25,10 @@
 	//VOREStation Edit Start TFF 16/12/19 - Sif -> Virgo 3b
 	switch(rng)
 		if(1)
-			msg = "A combat drone wing operating in close orbit above Virgo 3b has failed to return from a anti-piracy sweep.  If any are sighted, \
+			msg = "A combat drone wing operating in close orbit above Aeacus-G8 has failed to return from a anti-piracy sweep.  If any are sighted, \
 			approach with caution."
 		if(2)
-			msg = "Contact has been lost with a combat drone wing in Virgo 3b orbit.  If any are sighted in the area, approach with \
+			msg = "Contact has been lost with a combat drone wing in Aeacus-G8 orbit.  If any are sighted in the area, approach with \
 			caution."
 		if(3)
 			msg = "Unidentified hackers have targeted a combat drone wing deployed around Virgo 3b. If any are sighted in the area, approach with caution."
