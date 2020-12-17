@@ -1155,6 +1155,9 @@
 /turf/simulated/floor/tiled/white,
 /area/tether/surfacebase/medical/recoveryward)
 "abC" = (
+/turf/simulated/wall,
+/area/tether/surfacebase/medical/centralstairwell)
+"abD" = (
 /obj/structure/cable/green,
 /obj/machinery/power/apc{
 	cell_type = /obj/item/weapon/cell/apc;
@@ -1164,39 +1167,13 @@
 	},
 /obj/machinery/door/firedoor/glass/hidden/steel,
 /turf/simulated/floor/tiled/white,
-/area/tether/surfacebase/medical/centralhall)
-"abD" = (
-/obj/machinery/door/firedoor/glass/hidden/steel{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/white,
-/area/tether/surfacebase/medical/centralhall)
+/area/tether/surfacebase/medical/centralstairwell)
 "abE" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/structure/disposalpipe/segment,
-/obj/effect/floor_decal/borderfloorwhite{
-	dir = 4
-	},
-/obj/effect/floor_decal/corner/paleblue/border{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+/obj/machinery/door/firedoor/glass/hidden/steel{
 	dir = 1
 	},
-/obj/structure/cable/green{
-	icon_state = "1-2"
-	},
-/obj/effect/floor_decal/borderfloorwhite/corner2{
-	dir = 5
-	},
-/obj/effect/floor_decal/corner/paleblue/bordercorner2{
-	dir = 5
-	},
-/obj/machinery/door/firedoor/glass/hidden/steel{
-	dir = 8
-	},
 /turf/simulated/floor/tiled/white,
-/area/tether/surfacebase/medical/centralhall)
+/area/tether/surfacebase/medical/centralstairwell)
 "abF" = (
 /turf/simulated/open,
 /area/tether/surfacebase/medical/centralstairwell)
@@ -8430,6 +8407,14 @@
 /obj/item/device/universal_translator,
 /turf/simulated/floor/tiled/white,
 /area/tether/surfacebase/medical/breakroom)
+"amN" = (
+/obj/machinery/camera/network/security{
+	dir = 10
+	},
+/obj/effect/floor_decal/borderfloor,
+/obj/effect/floor_decal/corner/red/border,
+/turf/simulated/floor/tiled/dark,
+/area/tether/surfacebase/security/warden)
 "amO" = (
 /obj/effect/floor_decal/corner/paleblue/diagonal,
 /obj/structure/cable/green{
@@ -8451,6 +8436,50 @@
 /obj/effect/floor_decal/corner/paleblue/diagonal,
 /turf/simulated/floor/tiled/white,
 /area/tether/surfacebase/medical/breakroom)
+"amQ" = (
+/obj/structure/flora/ausbushes/brflowers,
+/obj/machinery/light/small{
+	dir = 1
+	},
+/mob/living/simple_mob/animal/passive/snake/noodle,
+/turf/simulated/floor/grass,
+/area/chapel/main)
+"amR" = (
+/obj/structure/flora/ausbushes/ppflowers,
+/mob/living/simple_mob/animal/passive/mouse/white/apple,
+/turf/simulated/floor/grass,
+/area/chapel/main)
+"amS" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/disposalpipe/segment,
+/obj/effect/floor_decal/borderfloorwhite{
+	dir = 4
+	},
+/obj/effect/floor_decal/corner/paleblue/border{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 1
+	},
+/obj/structure/cable/green{
+	icon_state = "1-2"
+	},
+/obj/effect/floor_decal/borderfloorwhite/corner2{
+	dir = 5
+	},
+/obj/effect/floor_decal/corner/paleblue/bordercorner2{
+	dir = 5
+	},
+/obj/machinery/door/firedoor/glass/hidden/steel{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/white,
+/area/tether/surfacebase/medical/centralstairwell)
+"amT" = (
+/obj/effect/floor_decal/rust,
+/mob/living/simple_mob/animal/giant_spider/spider_hos,
+/turf/simulated/floor/tiled/steel_dirty,
+/area/maintenance/asmaint2)
 "amX" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 4
@@ -11098,23 +11127,6 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
-/turf/simulated/floor/tiled/dark,
-/area/tether/surfacebase/security/warden)
-"asG" = (
-/obj/structure/bed{
-	desc = "Not the most comfy, but useful for napping when no one is in the brig.";
-	name = "cot"
-	},
-/obj/item/weapon/bedsheet/brown,
-/obj/machinery/camera/network/security{
-	dir = 10
-	},
-/obj/effect/floor_decal/borderfloor,
-/obj/effect/floor_decal/corner/red/border,
-/obj/effect/landmark/start{
-	name = "Warden"
-	},
-/obj/structure/curtain/open/bed,
 /turf/simulated/floor/tiled/dark,
 /area/tether/surfacebase/security/warden)
 "asH" = (
@@ -36069,14 +36081,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/tether/surfacebase/medical/breakroom)
-"czm" = (
-/mob/living/simple_mob/animal/passive/snake/noodle,
-/obj/structure/flora/ausbushes/brflowers,
-/obj/machinery/light/small{
-	dir = 1
-	},
-/turf/simulated/floor/grass,
-/area/chapel/main)
 "cJE" = (
 /obj/effect/floor_decal/corner/paleblue/diagonal,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -36142,11 +36146,6 @@
 /obj/structure/table/glass,
 /turf/simulated/floor/tiled/white,
 /area/tether/surfacebase/medical/breakroom)
-"kCs" = (
-/mob/living/simple_mob/animal/passive/mouse/white/apple,
-/obj/structure/flora/ausbushes/ppflowers,
-/turf/simulated/floor/grass,
-/area/chapel/main)
 "kPb" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -44507,7 +44506,7 @@ aHE
 baR
 bbb
 bbu
-bbG
+amT
 bbU
 aHE
 adt
@@ -45301,7 +45300,7 @@ aow
 apL
 aqM
 arH
-asG
+amN
 ann
 auy
 auA
@@ -50861,7 +50860,7 @@ ard
 aFA
 aDP
 aGP
-kCs
+amR
 aDP
 aHS
 aIx
@@ -50972,9 +50971,9 @@ agk
 abq
 agN
 ajH
-aar
-aar
-aar
+abC
+abC
+abC
 aiK
 aiK
 akH
@@ -51114,7 +51113,7 @@ agm
 abs
 agM
 ajR
-aar
+abC
 abF
 aer
 ajK
@@ -51256,7 +51255,7 @@ aeZ
 aaU
 aam
 ajS
-aar
+abC
 abF
 aer
 ajL
@@ -51398,7 +51397,7 @@ acC
 abt
 agq
 akE
-aar
+abC
 abH
 agP
 ajM
@@ -51428,7 +51427,7 @@ aEq
 ard
 aFC
 aDP
-czm
+amQ
 lOO
 aDP
 sVf
@@ -51540,7 +51539,7 @@ afX
 abv
 agN
 akN
-abC
+abD
 acZ
 agS
 aiK
@@ -51682,7 +51681,7 @@ agi
 abA
 agO
 akO
-abD
+abE
 adn
 air
 aks
@@ -51824,7 +51823,7 @@ afX
 acI
 agQ
 akP
-abE
+amS
 adV
 aiG
 akt

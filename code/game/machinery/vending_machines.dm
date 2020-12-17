@@ -437,7 +437,11 @@
 					/obj/item/weapon/grenade/flashbang = 4,
 					/obj/item/device/flash = 5,
 					/obj/item/weapon/reagent_containers/food/snacks/donut/normal = 12,
-					/obj/item/weapon/storage/box/evidence = 6)
+					/obj/item/weapon/storage/box/evidence = 6,
+					/obj/item/weapon/gun/projectile/sec/ntsidearm = 6,
+					/obj/item/ammo_magazine/nt45/rubber = 12,
+					/obj/item/ammo_magazine/nt45/hp = 6,
+					/obj/item/ammo_magazine/nt45 = 2)
 	contraband = list(/obj/item/clothing/glasses/sunglasses = 2,
 					/obj/item/weapon/storage/box/donut = 2)
 	req_log_access = access_armory

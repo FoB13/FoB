@@ -203,6 +203,11 @@
 /area/tether/surfacebase/medical/uppernorthstairwell{
 	name = "\improper North Medical Stairwell"
 	})
+"aas" = (
+/obj/structure/shuttle/engine/propulsion,
+/turf/simulated/floor/reinforced,
+/turf/simulated/shuttle/plating/carry,
+/area/shuttle/tether)
 "aat" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced/full,
@@ -2984,6 +2989,13 @@
 	},
 /turf/simulated/floor/tiled,
 /area/tether/surfacebase/security/iaa/officecommon)
+"aeu" = (
+/obj/machinery/atmospherics/unary/engine{
+	dir = 1
+	},
+/turf/simulated/floor/reinforced,
+/turf/simulated/shuttle/plating/carry,
+/area/shuttle/tourbus/engines)
 "aev" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -26207,18 +26219,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/tether/surfacebase/medical/triage)
-"aSO" = (
-/obj/structure/shuttle/engine/propulsion,
-/turf/simulated/floor/reinforced,
-/turf/simulated/shuttle/plating/carry,
-/area/shuttle/tether)
-"aSP" = (
-/obj/machinery/atmospherics/unary/engine{
-	dir = 1
-	},
-/turf/simulated/floor/reinforced,
-/turf/simulated/shuttle/plating/carry,
-/area/shuttle/tourbus/engines)
 "aSQ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
@@ -54079,7 +54079,7 @@ jML
 jHw
 jpB
 qWU
-aSP
+aeu
 aKU
 aOI
 aPb
@@ -54931,7 +54931,7 @@ caw
 jHw
 gHh
 qWU
-aSP
+aeu
 aKU
 aOI
 aKj
@@ -56916,7 +56916,7 @@ aNk
 uSA
 aNJ
 aNP
-aSO
+aas
 aKU
 abg
 aOk
@@ -57058,7 +57058,7 @@ aNl
 aNl
 aNK
 aNP
-aSO
+aas
 aKU
 abg
 aOk
@@ -57200,7 +57200,7 @@ aNm
 aNl
 aNK
 aNP
-aSO
+aas
 aKU
 abg
 aOk

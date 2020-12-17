@@ -25,7 +25,7 @@
 
 /obj/item/ammo_magazine/nt45/hp
 	name = "NT magazine (.45-HP)"
-	ammo_type = /obj/item/ammo_casing/nt45
+	ammo_type = /obj/item/ammo_casing/nt45/hp
 
 //casings
 /obj/item/ammo_casing/nt45

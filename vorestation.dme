@@ -3769,6 +3769,7 @@
 #include "code\modules\zfob\items\guns\ballistic.dm"
 #include "code\modules\zfob\items\guns\casing.dm"
 #include "code\modules\zfob\items\guns\mags.dm"
+#include "code\modules\zfob\mobs\pets.dm"
 #include "code\unit_tests\language_tests.dm"
 #include "code\unit_tests\loadout_tests.dm"
 #include "code\unit_tests\map_tests.dm"
