@@ -185,7 +185,9 @@ var/list/admin_verbs_server = list(
 	/client/proc/recipe_dump,
 	/client/proc/panicbunker,
 	/client/proc/paranoia_logging,
-	/client/proc/ip_reputation
+	/client/proc/ip_reputation,
+	/datum/admins/proc/ToggleCkeyWhitelist,
+	/datum/admins/proc/ReloadCkeyWhitelist
 	)
 
 var/list/admin_verbs_debug = list(

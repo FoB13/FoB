@@ -30,6 +30,10 @@ world/IsBanned(key,address,computer_id)
 
 		return ..()	//default pager ban stuff
 
+	//Check if user is whitelisted
+	if(config.useckeywhitelist && !check_ckey_whitelisted(ckey(key)))
+		return list("reason"="yikes", "desc"="\nProvide your vouch on the Discord.")
+
 	else
 
 		var/ckeytext = ckey(key)

@@ -17,3 +17,26 @@
 			if(istype(AM, /obj/item/weapon/gun))
 				to_chat(user, "You have chosen \the [AM]. Say hello to your new friend.")
 		qdel(src)
+
+/////////
+// Sec Box
+/////////
+/obj/item/secbox
+	name = "equipment box"
+	desc = "A secure box containing a sidearm and standard issue equipment."
+	icon = 'icons/obj/storage.dmi'
+	icon_state = "gunbox"
+	w_class = ITEMSIZE_HUGE
+
+/obj/item/secbox/attack_self(mob/living/user)
+	var/list/options = list()
+	options["Ballistic"] = list(/obj/item/weapon/gun/projectile/colt/detective, /obj/item/ammo_magazine/m45/rubber, /obj/item/ammo_magazine/m45/rubber)
+	options["Energy"] = list(/obj/item/weapon/gun/projectile/revolver/detective45, /obj/item/ammo_magazine/s45/rubber, /obj/item/ammo_magazine/s45/rubber)
+	var/choice = input(user,"Would you prefer a pistol or a revolver?") as null|anything in options
+	if(src && choice)
+		var/list/things_to_spawn = options[choice]
+		for(var/new_type in things_to_spawn) // Spawn all the things, the gun and the ammo.
+			var/atom/movable/AM = new new_type(get_turf(src))
+			if(istype(AM, /obj/item/weapon/gun))
+				to_chat(user, "You have chosen something that probably has more value than your life.")
+		qdel(src)

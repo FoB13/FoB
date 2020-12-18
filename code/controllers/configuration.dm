@@ -215,7 +215,8 @@ var/list/gamemode_cache = list()
 	var/python_path = "" //Path to the python executable.  Defaults to "python" on windows and "/usr/bin/env python2" on unix
 	var/use_lib_nudge = 0 //Use the C library nudge instead of the python nudge.
 	var/use_overmap = 0
-	
+	var/useckeywhitelist = 0
+
 	var/static/list/engine_map = list("Supermatter Engine", "Edison's Bane")	// Comma separated list of engines to choose from.  Blank means fully random.
 
 	// Event settings
@@ -285,7 +286,7 @@ var/list/gamemode_cache = list()
 
 	// whether or not to use the nightshift subsystem to perform lighting changes
 	var/static/enable_night_shifts = FALSE
-	
+
 	var/static/vgs_access_identifier = null	// VOREStation Edit - VGS
 	var/static/vgs_server_port = null	// VOREStation Edit - VGS
 
@@ -560,6 +561,9 @@ var/list/gamemode_cache = list()
 
 				if ("usewhitelist")
 					config.usewhitelist = 1
+
+				if ("useckeywhitelist")
+					config.useckeywhitelist = 1
 
 				if ("feature_object_spell_system")
 					config.feature_object_spell_system = 1
@@ -934,7 +938,7 @@ var/list/gamemode_cache = list()
 
 				if("enable_night_shifts")
 					config.enable_night_shifts = TRUE
-				
+
 				// VOREStation Edit Start - Can't be in _vr file because it is loaded too late.
 				if("vgs_access_identifier")
 					config.vgs_access_identifier = value
