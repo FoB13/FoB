@@ -181,12 +181,8 @@
 		/obj/item/taperoll/police,
 		/obj/item/device/hailer,
 		/obj/item/device/flashlight/flare,
-		/obj/item/clothing/accessory/storage/black_vest,
 		/obj/item/clothing/head/soft/sec/corp,
 		/obj/item/clothing/under/rank/security/corp,
-		///obj/item/ammo_magazine/m45/rubber, //VOREStation Removal,
-		/obj/item/weapon/gun/energy/taser,
-		/obj/item/weapon/cell/device/weapon,
 		/obj/item/clothing/suit/storage/hooded/wintercoat/security,
 		/obj/item/clothing/shoes/boots/winter/security,
 		/obj/item/device/flashlight/maglight)

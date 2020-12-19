@@ -75,6 +75,7 @@ var/list/gamemode_cache = list()
 
 	var/static/guest_jobban = 1
 	var/static/usewhitelist = 0
+	var/static/useckeywhitelist = 0
 	var/static/kick_inactive = 0				//force disconnect for inactive players after this many minutes, if non-0
 	var/static/show_mods = 0
 	var/static/show_devs = 0
@@ -215,7 +216,6 @@ var/list/gamemode_cache = list()
 	var/python_path = "" //Path to the python executable.  Defaults to "python" on windows and "/usr/bin/env python2" on unix
 	var/use_lib_nudge = 0 //Use the C library nudge instead of the python nudge.
 	var/use_overmap = 0
-	var/useckeywhitelist = 0
 
 	var/static/list/engine_map = list("Supermatter Engine", "Edison's Bane")	// Comma separated list of engines to choose from.  Blank means fully random.
 

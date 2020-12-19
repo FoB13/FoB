@@ -4,6 +4,12 @@ world/IsBanned(key,address,computer_id)
 	if(ckey(key) in admin_datums)
 		return ..()
 
+	//Check if user is whitelisted
+	if(config.useckeywhitelist && !check_ckey_whitelisted(ckey(key)))
+		log_adminwarn("Failed Login: [key] - Not on the whitelist")
+		message_admins("<font color='blue'>Failed Login: [key] - Not on the whitelist</font>")
+		return list("reason"="yikes", "desc"="\nProvide your vouch on the Discord.")
+
 	//Guest Checking
 	if(!config.guests_allowed && IsGuestKey(key))
 		log_adminwarn("Failed Login: [key] - Guests not allowed")
@@ -29,10 +35,6 @@ world/IsBanned(key,address,computer_id)
 			return .
 
 		return ..()	//default pager ban stuff
-
-	//Check if user is whitelisted
-	if(config.useckeywhitelist && !check_ckey_whitelisted(ckey(key)))
-		return list("reason"="yikes", "desc"="\nProvide your vouch on the Discord.")
 
 	else
 

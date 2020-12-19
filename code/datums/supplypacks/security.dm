@@ -188,7 +188,7 @@
 			/obj/item/clothing/accessory/armor/armorplate/medium,
 			/obj/item/clothing/accessory/armor/armorplate/medium,
 			/obj/item/clothing/accessory/armor/armorplate/tactical,
-			/obj/item/clothing/accessory/armor/armorplate/laserproof,
+			/obj/item/clothing/accessory/armor/armorplate/ablative,
 			/obj/item/clothing/accessory/armor/armorplate/riot,
 			/obj/item/clothing/accessory/armor/armorplate/bulletproof
 			)
@@ -309,7 +309,7 @@
 	contains = list(
 			/obj/item/clothing/head/helmet/laserproof,
 			/obj/item/clothing/suit/armor/pcarrier,
-			/obj/item/clothing/accessory/armor/armorplate/laserproof,
+			/obj/item/clothing/accessory/armor/armorplate/ablative,
 			/obj/item/clothing/accessory/armor/armguards/laserproof,
 			/obj/item/clothing/accessory/armor/legguards/laserproof
 			)
