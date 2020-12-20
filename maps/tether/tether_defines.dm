@@ -36,9 +36,9 @@
 /datum/map/tether/New()
 	..()
 	var/choice = pickweight(list(
-		"title" = 10,
+/*		"title" = 10,
 		"tether" = 50,
-		"tether_night" = 50,
+		"tether_night" = 50,*/
 		"tether2_night" = 50,
 		"tether2_dog" = 1,
 		"tether2_love" = 1
@@ -232,8 +232,8 @@
 // Overmap represetation of tether
 /obj/effect/overmap/visitable/sector/virgo3b
 	name = "Aeacus-G8"
-	desc = "Full of phoron, and home to the NSB Adephagia, where you can dock and refuel your craft."
-	scanner_desc = @{"[i]Registration[/i]: NSB Adephagia
+	desc = "Full of phoron, and home to the NRF Hecate, where you can dock and refuel your craft."
+	scanner_desc = @{"[i]Registration[/i]: NRF Hecate
 [i]Class[/i]: Installation
 [i]Transponder[/i]: Transmitting (CIV), NanoTrasen IFF
 [b]Notice[/b]: NanoTrasen Base, authorized personnel only"}

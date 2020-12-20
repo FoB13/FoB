@@ -8,7 +8,7 @@
 	blurb = "Very little is known about these creatures. They appear to be largely mammalian in appearance. \
 	Seemingly very rare to encounter, there have been widespread myths of these creatures the galaxy over, \
 	but next to no verifiable evidence to their existence. However, they have recently been more verifiably \
-	documented in the Virgo system, following a mining bombardment of Virgo 3. The crew of NSB Adephagia have \
+	documented in the Virgo system, following a mining bombardment of Virgo 3. The crew of NRF Hecate have \
 	taken to calling these creatures 'Shadekin', and the name has generally stuck and spread. "		//TODO: Something that's not wiki copypaste
 	wikilink = "https://wiki.vore-station.net/Shadekin"
 	catalogue_data = list(/datum/category_item/catalogue/fauna/shadekin)

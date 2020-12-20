@@ -555,3 +555,7 @@ ALLOW_URL_LINKS
 
 # Control which submaps are loaded for the Dynamic Engine system
 ENGINE_MAP Supermatter Engine,Edison's Bane
+
+## Bans from the server anyone whose ckey is not in data/ckey_whitelist.txt the actual message is stored in /modules/admin/IsBanned.dm
+## one ckey per line, in lowercase.
+# USECKEYWHITELIST

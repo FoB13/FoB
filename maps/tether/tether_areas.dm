@@ -1441,7 +1441,7 @@ area/shuttle/mining_outpost/shuttle
 	icon_state = "shuttle"
 
 /area/shuttle/awaymission/home
-	name = "NSB Adephagia (AM)"
+	name = "NRF Hecate (AM)"
 	icon_state = "shuttle2"
 
 /area/shuttle/awaymission/warp

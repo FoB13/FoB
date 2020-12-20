@@ -30,16 +30,15 @@
 
 /client/verb/rules()
 	set name = "Rules"
-	set desc = "Show Server Rules."
-	set hidden = 1
-
-	if(config.rulesurl)
-		if(alert("This will open the rules in your browser. Are you sure?",,"Yes","No")=="No")
-			return
-		src << link(config.rulesurl)
-	else
-		to_chat(src, "<span class='danger'>The rules URL is not set in the server configuration.</span>")
-	return
+	set category = "OOC"
+	getFiles(
+		'html/rules.html'
+		)
+	show_browser(src, 'html/rules.html', "window=rules;size=675x650")
+	if(prefs.lastchangelog != changelog_hash)
+		prefs.lastchangelog = changelog_hash
+		SScharacter_setup.queue_preferences_save(prefs)
+		winset(src, "rpane.rules", "background-color=none;font-style=;")
 
 /client/verb/map()
 	set name = "Map"

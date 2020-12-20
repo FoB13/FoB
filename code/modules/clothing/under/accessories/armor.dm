@@ -142,7 +142,7 @@
 	armorsoak = list(melee = 10, bullet = 0, laser = 0, energy = 5, bomb = 0, bio = 0, rad = 0)
 	siemens_coefficient = 0.7
 
-/obj/item/clothing/accessory/armor/armorplate/laserproof
+/obj/item/clothing/accessory/armor/armorplate/ablative
 	name = "ablative armor plate"
 	desc = "A durasteel-scaled synthetic armor plate, providing good protection against lasers. Attaches to a plate carrier."
 	icon_state = "armor_medium"
@@ -184,6 +184,7 @@
 	icon_state = "armguards"
 	gender = PLURAL
 	body_parts_covered = ARMS
+	slowdown = 0.2
 	armor = list(melee = 40, bullet = 40, laser = 40, energy = 25, bomb = 30, bio = 0, rad = 0)
 	slot = ACCESSORY_SLOT_ARMOR_A
 
@@ -243,6 +244,7 @@
 	icon_state = "legguards"
 	gender = PLURAL
 	body_parts_covered = LEGS
+	slowdown = 0.2
 	armor = list(melee = 40, bullet = 40, laser = 40, energy = 25, bomb = 30, bio = 0, rad = 0)
 	slot = ACCESSORY_SLOT_ARMOR_L
 

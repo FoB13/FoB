@@ -175,7 +175,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	icon_state = "shuttlered"
 
 /area/shuttle/administration/station
-	name = "NSB Adephagia (AS)" //VOREStation Edit
+	name = "NRF Hecate (AS)" //VOREStation Edit
 	icon_state = "shuttlered2"
 
 /area/shuttle/trade

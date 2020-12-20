@@ -4,8 +4,7 @@
 	..()
 
 /obj/machinery/vending/security/New()
-	products += list(/obj/item/weapon/gun/energy/taser = 8,/obj/item/weapon/gun/energy/stunrevolver = 4,
-					/obj/item/weapon/reagent_containers/spray/pepper = 6,/obj/item/taperoll/police = 6,
+	products += list(/obj/item/weapon/reagent_containers/spray/pepper = 6,/obj/item/taperoll/police = 6,
 					/obj/item/clothing/glasses/omnihud/sec = 6)
 	..()
 
@@ -1490,12 +1489,6 @@
 //Tweaked existing vendors
 /obj/machinery/vending/hydroseeds/New()
 	products += list(/obj/item/seeds/shrinkshroom = 3,/obj/item/seeds/megashroom = 3)
-	..()
-
-/obj/machinery/vending/security/New()
-	products += list(/obj/item/weapon/gun/energy/taser = 8,/obj/item/weapon/gun/energy/stunrevolver = 4,
-					/obj/item/weapon/reagent_containers/spray/pepper = 6,/obj/item/taperoll/police = 6,
-					/obj/item/clothing/glasses/omnihud/sec = 6)
 	..()
 
 /obj/machinery/vending/tool/New()

@@ -132,9 +132,9 @@
 	the facility and the planet's stations via shuttle extremely cost-efficient."*/ // ToDo: ReDo.
 
 /datum/lore/codex/page/nsb_adephagia/add_content()
-	name = "NSB Adephagia (Space Elevator)"
-	keywords += list("NSB Adephagia", "Tether")
-	data = "Also known as the 'Tether', the NSB Adephagia is one of the most prominent installations in the [quick_link("Myrmidon-Prime")] star system. \
+	name = "NRF Hecate (Space Elevator)"
+	keywords += list("NRF Hecate", "Tether")
+	data = "Also known as the 'Tether', the NRF Hecate is one of the most prominent installations in the [quick_link("Myrmidon-Prime")] star system. \
 	Owned and operated by [quick_link("NanoTrasen")], the facility was built on [quick_link("Aeacus-G8")] in 2561 to provide easy access to mining \
 	operations on the surface. Both phoron and alien artifacts are often found in the rocks, provoking substantial scientific interest into the moon's \
 	largely unknown history.\
