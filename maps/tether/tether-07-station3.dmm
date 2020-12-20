@@ -454,12 +454,15 @@
 /turf/simulated/floor,
 /area/maintenance/station/ai)
 "aaR" = (
-/obj/machinery/atmospherics/unary/engine{
+/obj/effect/floor_decal/borderfloorblack{
 	dir = 1
 	},
-/turf/simulated/floor/reinforced,
-/turf/simulated/shuttle/plating/airless/carry,
-/area/shuttle/excursion/cargo)
+/obj/structure/table/rack/shelf/steel,
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark,
+/area/security/security_equiptment_storage)
 "aaS" = (
 /obj/structure/catwalk,
 /obj/structure/cable{
@@ -2267,21 +2270,13 @@
 /turf/simulated/floor/tiled,
 /area/security/hallwayaux)
 "aes" = (
-/obj/structure/shuttle/engine/propulsion{
-	dir = 8;
-	icon_state = "propulsion_l"
+/obj/machinery/atmospherics/unary/engine{
+	dir = 1
 	},
-/turf/simulated/floor/tiled/asteroid_steel/airless,
+/turf/simulated/floor/reinforced,
 /turf/simulated/shuttle/plating/airless/carry,
-/area/shuttle/mining_outpost/shuttle)
+/area/shuttle/excursion/cargo)
 "aet" = (
-/obj/structure/shuttle/engine/propulsion{
-	dir = 8
-	},
-/turf/simulated/floor/tiled/asteroid_steel/airless,
-/turf/simulated/shuttle/plating/airless/carry,
-/area/shuttle/mining_outpost/shuttle)
-"aeu" = (
 /obj/effect/floor_decal/borderfloorblack{
 	dir = 8
 	},
@@ -2296,15 +2291,13 @@
 /obj/structure/cable/green{
 	icon_state = "0-4"
 	},
-/obj/structure/closet/secure_closet/security,
 /obj/machinery/light{
 	dir = 8;
 	icon_state = "tube1"
 	},
-/obj/item/device/holowarrant,
 /turf/simulated/floor/tiled/dark,
 /area/security/security_lockerroom)
-"aev" = (
+"aeu" = (
 /obj/effect/floor_decal/borderfloorblack/corner{
 	dir = 8;
 	icon_state = "borderfloorcorner_black"
@@ -2314,8 +2307,22 @@
 	icon_state = "bordercolorcorner"
 	},
 /obj/structure/table/bench/steel,
-/obj/effect/landmark/start{
-	name = "Security Officer"
+/turf/simulated/floor/tiled/dark,
+/area/security/security_lockerroom)
+"aev" = (
+/obj/effect/floor_decal/borderfloorblack{
+	dir = 4
+	},
+/obj/effect/floor_decal/corner/red/border{
+	dir = 4
+	},
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/machinery/alarm{
+	dir = 8;
+	icon_state = "alarm0";
+	pixel_x = 24
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/security_lockerroom)
@@ -2335,16 +2342,38 @@
 /turf/simulated/floor/tiled/white,
 /area/security/security_bathroom)
 "aex" = (
-/obj/structure/shuttle/engine/propulsion{
-	dir = 8;
-	icon_state = "propulsion_r"
+/obj/effect/floor_decal/borderfloorblack{
+	dir = 8
 	},
-/turf/simulated/floor/tiled/asteroid_steel/airless,
-/turf/simulated/shuttle/plating/airless/carry,
-/area/shuttle/mining_outpost/shuttle)
+/obj/effect/floor_decal/corner/red/border{
+	dir = 8
+	},
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 4
+	},
+/obj/machinery/firealarm{
+	dir = 8;
+	pixel_x = -24;
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled/dark,
+/area/security/security_lockerroom)
 "aey" = (
 /turf/simulated/floor/carpet,
 /area/security/breakroom)
+"aez" = (
+/obj/effect/floor_decal/borderfloorblack{
+	dir = 8
+	},
+/obj/effect/floor_decal/corner/red/border{
+	dir = 8
+	},
+/obj/structure/table/bench/steel,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark,
+/area/security/security_lockerroom)
 "aeA" = (
 /obj/effect/floor_decal/corner/red{
 	dir = 10;
@@ -2453,10 +2482,39 @@
 	},
 /turf/simulated/floor/wood,
 /area/security/breakroom)
-"aeJ" = (
-/turf/simulated/floor/wood,
-/area/security/breakroom)
-"aeK" = (
+"aeG" = (
+/obj/effect/floor_decal/borderfloorblack{
+	dir = 4
+	},
+/obj/effect/floor_decal/corner/red/border{
+	dir = 4
+	},
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark,
+/area/security/security_lockerroom)
+"aeH" = (
+/obj/effect/floor_decal/borderfloorblack{
+	dir = 10
+	},
+/obj/effect/floor_decal/corner/red/border{
+	dir = 10
+	},
+/obj/effect/floor_decal/borderfloorblack/corner2{
+	dir = 9
+	},
+/obj/effect/floor_decal/corner/red/bordercorner2{
+	dir = 9
+	},
+/obj/machinery/light_switch{
+	dir = 4;
+	pixel_x = -28;
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled/dark,
+/area/security/security_lockerroom)
+"aeI" = (
 /obj/effect/floor_decal/borderfloorblack{
 	dir = 6
 	},
@@ -2469,11 +2527,30 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/obj/effect/landmark/start{
-	name = "Security Officer"
-	},
 /turf/simulated/floor/tiled/dark,
 /area/security/security_lockerroom)
+"aeJ" = (
+/turf/simulated/floor/wood,
+/area/security/breakroom)
+"aeK" = (
+/obj/effect/floor_decal/borderfloorblack{
+	dir = 6
+	},
+/obj/effect/floor_decal/corner/red/border{
+	dir = 6
+	},
+/obj/effect/floor_decal/borderfloorblack/corner2,
+/obj/effect/floor_decal/corner/red/bordercorner2,
+/turf/simulated/floor/tiled/dark,
+/area/security/security_lockerroom)
+"aeL" = (
+/obj/structure/shuttle/engine/propulsion{
+	dir = 8;
+	icon_state = "propulsion_l"
+	},
+/turf/simulated/floor/tiled/asteroid_steel/airless,
+/turf/simulated/shuttle/plating/airless/carry,
+/area/shuttle/mining_outpost/shuttle)
 "aeM" = (
 /obj/structure/railing{
 	dir = 4
@@ -2560,6 +2637,13 @@
 /obj/effect/floor_decal/corner/lightgrey/border,
 /turf/simulated/floor/tiled,
 /area/hallway/station/upper)
+"aeS" = (
+/obj/structure/shuttle/engine/propulsion{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/asteroid_steel/airless,
+/turf/simulated/shuttle/plating/airless/carry,
+/area/shuttle/mining_outpost/shuttle)
 "aeT" = (
 /turf/simulated/wall,
 /area/security/security_equiptment_storage)
@@ -2608,6 +2692,14 @@
 	},
 /turf/simulated/floor,
 /area/maintenance/station/sec_upper)
+"aeX" = (
+/obj/structure/shuttle/engine/propulsion{
+	dir = 8;
+	icon_state = "propulsion_r"
+	},
+/turf/simulated/floor/tiled/asteroid_steel/airless,
+/turf/simulated/shuttle/plating/airless/carry,
+/area/shuttle/mining_outpost/shuttle)
 "aeY" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
@@ -4272,32 +4364,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/security_equiptment_storage)
-"akA" = (
-/obj/effect/floor_decal/borderfloorblack{
-	dir = 1
-	},
-/obj/structure/table/rack/shelf/steel,
-/obj/item/clothing/suit/armor/vest/alt{
-	pixel_x = -4;
-	pixel_y = -6
-	},
-/obj/item/clothing/suit/armor/vest/alt{
-	pixel_x = 6;
-	pixel_y = -6
-	},
-/obj/item/clothing/suit/armor/vest/alt{
-	pixel_x = -4;
-	pixel_y = 6
-	},
-/obj/item/clothing/suit/armor/vest/alt{
-	pixel_x = 6;
-	pixel_y = 6
-	},
-/obj/machinery/light{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/dark,
-/area/security/security_equiptment_storage)
 "akC" = (
 /obj/effect/floor_decal/borderfloorblack{
 	dir = 5
@@ -5557,25 +5623,6 @@
 /obj/machinery/hologram/holopad,
 /turf/simulated/floor/tiled/dark,
 /area/security/security_lockerroom)
-"anl" = (
-/obj/effect/floor_decal/borderfloorblack{
-	dir = 4
-	},
-/obj/effect/floor_decal/corner/red/border{
-	dir = 4
-	},
-/obj/structure/closet/secure_closet/security,
-/obj/machinery/light{
-	dir = 4
-	},
-/obj/machinery/alarm{
-	dir = 8;
-	icon_state = "alarm0";
-	pixel_x = 24
-	},
-/obj/item/device/holowarrant,
-/turf/simulated/floor/tiled/dark,
-/area/security/security_lockerroom)
 "ano" = (
 /turf/simulated/wall,
 /area/security/hallway)
@@ -5686,25 +5733,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/quartermaster/delivery)
-"anH" = (
-/obj/effect/floor_decal/borderfloorblack{
-	dir = 8
-	},
-/obj/effect/floor_decal/corner/red/border{
-	dir = 8
-	},
-/obj/machinery/atmospherics/unary/vent_scrubber/on{
-	dir = 4
-	},
-/obj/structure/closet/secure_closet/security,
-/obj/machinery/firealarm{
-	dir = 8;
-	pixel_x = -24;
-	pixel_y = 0
-	},
-/obj/item/device/holowarrant,
-/turf/simulated/floor/tiled/dark,
-/area/security/security_lockerroom)
 "anI" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
@@ -5755,20 +5783,6 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/dark,
-/area/security/security_lockerroom)
-"anM" = (
-/obj/effect/floor_decal/borderfloorblack{
-	dir = 4
-	},
-/obj/effect/floor_decal/corner/red/border{
-	dir = 4
-	},
-/obj/machinery/atmospherics/unary/vent_scrubber/on{
-	dir = 8
-	},
-/obj/structure/closet/secure_closet/security,
-/obj/item/device/holowarrant,
 /turf/simulated/floor/tiled/dark,
 /area/security/security_lockerroom)
 "anN" = (
@@ -5830,28 +5844,6 @@
 /obj/structure/table/woodentable,
 /turf/simulated/floor/carpet,
 /area/security/breakroom)
-"aob" = (
-/obj/effect/floor_decal/borderfloorblack{
-	dir = 10
-	},
-/obj/effect/floor_decal/corner/red/border{
-	dir = 10
-	},
-/obj/effect/floor_decal/borderfloorblack/corner2{
-	dir = 9
-	},
-/obj/effect/floor_decal/corner/red/bordercorner2{
-	dir = 9
-	},
-/obj/structure/closet/secure_closet/security,
-/obj/machinery/light_switch{
-	dir = 4;
-	pixel_x = -28;
-	pixel_y = 0
-	},
-/obj/item/device/holowarrant,
-/turf/simulated/floor/tiled/dark,
-/area/security/security_lockerroom)
 "aoc" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -5878,19 +5870,6 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/dark,
-/area/security/security_lockerroom)
-"aoe" = (
-/obj/effect/floor_decal/borderfloorblack{
-	dir = 6
-	},
-/obj/effect/floor_decal/corner/red/border{
-	dir = 6
-	},
-/obj/effect/floor_decal/borderfloorblack/corner2,
-/obj/effect/floor_decal/corner/red/bordercorner2,
-/obj/structure/closet/secure_closet/security,
-/obj/item/device/holowarrant,
 /turf/simulated/floor/tiled/dark,
 /area/security/security_lockerroom)
 "aof" = (
@@ -19180,22 +19159,6 @@
 	},
 /turf/simulated/floor/carpet,
 /area/security/breakroom)
-"aSE" = (
-/obj/effect/floor_decal/borderfloorblack{
-	dir = 8
-	},
-/obj/effect/floor_decal/corner/red/border{
-	dir = 8
-	},
-/obj/structure/table/bench/steel,
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/obj/effect/landmark/start{
-	name = "Security Officer"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/security/security_lockerroom)
 "aSH" = (
 /turf/simulated/wall,
 /area/storage/emergency_storage/emergency3)
@@ -30612,9 +30575,9 @@ akY
 aeT
 amc
 amx
-aeu
-anH
-aob
+aet
+aex
+aeH
 amh
 apb
 atY
@@ -30890,7 +30853,7 @@ yeP
 yeP
 yeP
 aaf
-akA
+aaR
 adz
 ala
 aeT
@@ -30898,7 +30861,7 @@ amd
 amB
 ank
 anJ
-aeK
+aeI
 amh
 amj
 ifk
@@ -31038,8 +31001,8 @@ afW
 aeT
 ame
 amB
-aev
-aSE
+aeu
+aez
 aod
 amh
 apd
@@ -31322,9 +31285,9 @@ afY
 aeT
 ajv
 amD
-anl
-anM
-aoe
+aev
+aeG
+aeK
 amh
 apf
 apG
@@ -36428,7 +36391,7 @@ aUJ
 aXb
 aWp
 iJT
-aaR
+aes
 ams
 aXq
 abe
@@ -36570,7 +36533,7 @@ wRt
 eug
 aWp
 cQa
-aaR
+aes
 ams
 aXq
 abe
@@ -37706,7 +37669,7 @@ pPy
 efQ
 aWp
 cQa
-aaR
+aes
 ams
 amq
 abe
@@ -37848,7 +37811,7 @@ iEV
 tEV
 aWp
 rUl
-aaR
+aes
 ams
 aQL
 abe
@@ -39885,11 +39848,11 @@ avt
 avt
 adD
 aZS
-aes
-aet
-aet
-aet
-aex
+aeL
+aeS
+aeS
+aeS
+aeX
 baB
 adD
 avt

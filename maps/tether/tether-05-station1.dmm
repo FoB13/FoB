@@ -7939,6 +7939,12 @@
 /obj/machinery/door/firedoor/glass,
 /turf/simulated/floor,
 /area/engineering/hallway)
+"aou" = (
+/obj/effect/floor_decal/techfloor{
+	dir = 10
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/crew_quarters/heads/chief)
 "aov" = (
 /obj/structure/disposalpipe/trunk{
 	dir = 4
@@ -7968,6 +7974,11 @@
 	},
 /turf/simulated/wall/r_wall,
 /area/engineering/hallway)
+"aoz" = (
+/obj/random/drinkbottle,
+/obj/effect/floor_decal/rust,
+/turf/simulated/floor/plating,
+/area/vacant/vacant_restaurant_lower)
 "aoB" = (
 /obj/effect/floor_decal/steeldecal/steel_decals7{
 	dir = 9
@@ -8050,6 +8061,16 @@
 "aoO" = (
 /turf/simulated/wall/r_wall,
 /area/storage/emergency_storage/emergency4)
+"aoQ" = (
+/obj/effect/floor_decal/techfloor,
+/obj/effect/floor_decal/techfloor/hole,
+/obj/machinery/alarm{
+	dir = 1;
+	icon_state = "alarm0";
+	pixel_y = -22
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/crew_quarters/heads/chief)
 "aoR" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor/border_only,
@@ -8058,6 +8079,12 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/abandonedlibrary)
+"aoS" = (
+/obj/effect/floor_decal/techfloor{
+	dir = 6
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/crew_quarters/heads/chief)
 "aoT" = (
 /obj/structure/table/woodentable,
 /obj/item/weapon/paper,
@@ -9682,16 +9709,6 @@
 	},
 /turf/simulated/floor/carpet,
 /area/engineering/break_room)
-"aso" = (
-/obj/effect/floor_decal/techfloor,
-/obj/effect/floor_decal/techfloor/hole,
-/obj/machinery/alarm{
-	dir = 1;
-	icon_state = "alarm0";
-	pixel_y = -22
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/crew_quarters/heads/chief)
 "asp" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -20613,18 +20630,6 @@
 	},
 /turf/simulated/floor/carpet,
 /area/engineering/foyer)
-"bYJ" = (
-/obj/effect/floor_decal/techfloor{
-	dir = 10
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/crew_quarters/heads/chief)
-"bYK" = (
-/obj/effect/floor_decal/techfloor{
-	dir = 6
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/crew_quarters/heads/chief)
 "bYN" = (
 /obj/item/device/instrument/violin,
 /turf/simulated/floor,
@@ -20665,11 +20670,6 @@
 /turf/simulated/floor,
 /area/vacant/vacant_restaurant_lower)
 "bZH" = (
-/obj/effect/floor_decal/rust,
-/turf/simulated/floor/plating,
-/area/vacant/vacant_restaurant_lower)
-"bZJ" = (
-/obj/random/drinkbottle,
 /obj/effect/floor_decal/rust,
 /turf/simulated/floor/plating,
 /area/vacant/vacant_restaurant_lower)
@@ -29077,7 +29077,7 @@ bft
 bhj
 aRb
 aCd
-bYJ
+aou
 aRb
 bZv
 bZv
@@ -29219,7 +29219,7 @@ bfv
 bnw
 aXC
 bYh
-aso
+aoQ
 aRb
 bZv
 bZv
@@ -29361,7 +29361,7 @@ aRX
 aVz
 aRb
 bYg
-bYK
+aoS
 aRb
 bZv
 bZv
@@ -29507,7 +29507,7 @@ aRb
 aRb
 bZv
 bZv
-bZJ
+aoz
 bZH
 bYP
 bYP

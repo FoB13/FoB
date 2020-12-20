@@ -30,8 +30,8 @@
 
 /obj/item/secbox/attack_self(mob/living/user)
 	var/list/options = list()
-	options["Ballistic"] = list(/obj/item/weapon/gun/projectile/sec/ntsidearm, /obj/item/ammo_magazine/nt45/hp, /obj/item/weapon/gun/projectile/shotgun/pump/beanbag)
-	options["Energy"] = list(/obj/item/weapon/gun/energy/gun/sec, /obj/item/weapon/cell/device/weapon)
+	options["Ballistic"] = list(/obj/item/weapon/gun/projectile/sec/ntsidearm)
+	options["Energy"] = list(/obj/item/weapon/gun/energy/gun/sec)
 	var/choice = input(user,"Would you prefer a ballistic or energy kit?") as null|anything in options
 	if(src && choice)
 		var/list/things_to_spawn = options[choice]

@@ -177,7 +177,7 @@
 		/obj/item/weapon/reagent_containers/spray/pepper,
 		/obj/item/weapon/grenade/flashbang,
 		/obj/item/weapon/melee/baton/loaded,
-		/obj/item/clothing/glasses/sunglasses/sechud,
+		/obj/item/clothing/glasses/omnihud/sec,
 		/obj/item/taperoll/police,
 		/obj/item/device/hailer,
 		/obj/item/device/flashlight/flare,

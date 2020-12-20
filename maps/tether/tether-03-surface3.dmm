@@ -22336,10 +22336,16 @@
 /turf/simulated/floor/reinforced,
 /area/tether/surfacebase/shuttle_pad)
 "aKJ" = (
-/obj/structure/shuttle/engine/propulsion,
-/turf/simulated/floor/reinforced,
-/turf/simulated/shuttle/plating/carry,
-/area/shuttle/tether)
+/obj/effect/floor_decal/borderfloor{
+	dir = 1
+	},
+/obj/effect/floor_decal/corner/red/border{
+	dir = 1
+	},
+/obj/machinery/camera/network/security,
+/mob/living/bot/secbot/beepsky,
+/turf/simulated/floor/tiled,
+/area/tether/surfacebase/security/processing)
 "aKK" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -22465,12 +22471,10 @@
 /turf/simulated/floor/tiled,
 /area/tether/surfacebase/shuttle_pad)
 "aKY" = (
-/obj/machinery/atmospherics/unary/engine{
-	dir = 1
-	},
+/obj/structure/shuttle/engine/propulsion,
 /turf/simulated/floor/reinforced,
 /turf/simulated/shuttle/plating/carry,
-/area/shuttle/tourbus/engines)
+/area/shuttle/tether)
 "aKZ" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 8
@@ -26270,6 +26274,13 @@
 	},
 /turf/simulated/floor/plating,
 /area/tether/surfacebase/medical/triage)
+"aSO" = (
+/obj/machinery/atmospherics/unary/engine{
+	dir = 1
+	},
+/turf/simulated/floor/reinforced,
+/turf/simulated/shuttle/plating/carry,
+/area/shuttle/tourbus/engines)
 "aSQ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
@@ -39887,16 +39898,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/lower/third_south)
-"mdE" = (
-/obj/effect/floor_decal/borderfloor{
-	dir = 1
-	},
-/obj/effect/floor_decal/corner/red/border{
-	dir = 1
-	},
-/obj/machinery/camera/network/security,
-/turf/simulated/floor/tiled,
-/area/tether/surfacebase/security/processing)
 "mel" = (
 /obj/machinery/hologram/holopad,
 /obj/structure/cable/green{
@@ -52544,7 +52545,7 @@ abY
 abY
 acI
 adR
-mdE
+aKJ
 aew
 bzK
 agg
@@ -54032,7 +54033,7 @@ jML
 jHw
 jpB
 qWU
-aKY
+aSO
 aKU
 aOI
 aPb
@@ -54884,7 +54885,7 @@ caw
 jHw
 gHh
 qWU
-aKY
+aSO
 aKU
 aOI
 aKj
@@ -56869,7 +56870,7 @@ aNk
 uSA
 aNJ
 aNP
-aKJ
+aKY
 aKU
 abg
 aOk
@@ -57011,7 +57012,7 @@ aNl
 aNl
 aNK
 aNP
-aKJ
+aKY
 aKU
 abg
 aOk
@@ -57153,7 +57154,7 @@ aNm
 aNl
 aNK
 aNP
-aKJ
+aKY
 aKU
 abg
 aOk
