@@ -6,11 +6,11 @@
 	tail = "tail"
 	icobase_tail = 1
 	unarmed_types = list(/datum/unarmed_attack/stomp, /datum/unarmed_attack/kick, /datum/unarmed_attack/claws, /datum/unarmed_attack/bite/sharp)
-	//darksight = 8
-	//slowdown = -0.5
-	//brute_mod = 1.15
-	//burn_mod =  1.15
-	//gluttonous = 1
+	darksight = 8
+	slowdown = -0.5
+	brute_mod = 2
+	burn_mod =  2
+//	gluttonous = 1
 	num_alternate_languages = 3
 	secondary_langs = list(LANGUAGE_SAGARU)
 	name_language = LANGUAGE_SAGARU
@@ -69,11 +69,11 @@
 	tail = "tail"
 	icobase_tail = 1
 	unarmed_types = list(/datum/unarmed_attack/stomp, /datum/unarmed_attack/kick, /datum/unarmed_attack/claws, /datum/unarmed_attack/bite/sharp)
-	//darksight = 8
-	//slowdown = -0.5
-	//brute_mod = 1.15
-	//burn_mod =  1.15
-	//gluttonous = 1
+	darksight = 4
+	slowdown = -0.2
+	brute_mod = 1.15
+	burn_mod =  1.15
+//	gluttonous = 1
 	num_alternate_languages = 3
 	secondary_langs = list(LANGUAGE_SKRELLIAN)
 	name_language = LANGUAGE_SKRELLIAN
@@ -116,11 +116,11 @@
 	tail = "tail"
 	icobase_tail = 1
 	unarmed_types = list(/datum/unarmed_attack/stomp, /datum/unarmed_attack/kick, /datum/unarmed_attack/claws, /datum/unarmed_attack/bite/sharp)
-	//darksight = 8
-	//slowdown = -0.5
-	//brute_mod = 1.15
-	//burn_mod =  1.15
-	//gluttonous = 1
+	darksight = 2
+	slowdown = -0.8
+	total_health = 95
+	burn_mod =  1.50
+//	gluttonous = 1
 	num_alternate_languages = 3
 	secondary_langs = list(LANGUAGE_BIRDSONG)
 	name_language = LANGUAGE_BIRDSONG
@@ -289,7 +289,7 @@
 		H.equip_to_slot_or_del(L, slot_in_backpack)
 
 /datum/species/diona
-	spawn_flags = SPECIES_CAN_JOIN | SPECIES_IS_WHITELISTED | SPECIES_WHITELIST_SELECTABLE
+	spawn_flags = SPECIES_CAN_JOIN// | SPECIES_IS_WHITELISTED | SPECIES_WHITELIST_SELECTABLE
 	min_age = 18
 	wikilink="https://wiki.vore-station.net/Diona"
 
