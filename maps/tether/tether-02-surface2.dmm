@@ -10258,6 +10258,13 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/tether/surfacebase/security/armory)
+"apS" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/hologram/holopad,
+/mob/living/bot/secbot/slime/slimesky,
+/turf/simulated/floor/tiled/dark,
+/area/rnd/outpost/xenobiology/outpost_slimepens)
 "apT" = (
 /obj/structure/railing{
 	dir = 4
@@ -33548,12 +33555,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/rnd/outpost/xenobiology/outpost_slimepens)
-"bjW" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/hologram/holopad,
-/turf/simulated/floor/tiled/dark,
-/area/rnd/outpost/xenobiology/outpost_slimepens)
 "bjX" = (
 /obj/machinery/button/remote/blast_door{
 	id = "xenobiodiv6";
@@ -41332,7 +41333,7 @@ bio
 biN
 bjn
 bhN
-bjW
+apS
 biN
 bkJ
 bkR
