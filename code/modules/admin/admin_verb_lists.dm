@@ -187,7 +187,8 @@ var/list/admin_verbs_server = list(
 	/client/proc/paranoia_logging,
 	/client/proc/ip_reputation,
 	/datum/admins/proc/ToggleCkeyWhitelist,
-	/datum/admins/proc/ReloadCkeyWhitelist
+	/datum/admins/proc/ReloadCkeyWhitelist,
+	/datum/admins/proc/togglehubvisibility //toggles visibility on the BYOND Hub,
 	)
 
 var/list/admin_verbs_debug = list(

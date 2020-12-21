@@ -47,9 +47,21 @@
 				apply_damage(damage, BURN, def_zone, initial_blocked, soaked, used_weapon, sharp, edge)	// Handle it as normal burn.
 			else
 				adjustToxLoss(damage * blocked)
+		if(IRRADIATE)
+			radiation += damage
+			apply_radiation(damage)
 	flash_weak_pain()
 	updatehealth()
 	return 1
+
+
+/mob/living/proc/apply_radiation(var/damage = 0)
+	if(!damage)
+		return 0
+
+	radiation += damage
+	return 1
+
 
 
 /mob/living/proc/apply_damages(var/brute = 0, var/burn = 0, var/tox = 0, var/oxy = 0, var/clone = 0, var/halloss = 0, var/def_zone = null, var/blocked = 0)

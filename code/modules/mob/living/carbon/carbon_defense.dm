@@ -91,6 +91,10 @@
 		else
 			user.visible_message("<span class='danger'>\The [user] cut [src]'s neck with \the [W]!</span>")
 
+		var/use_sound
+		use_sound = pick('sound/people/throat.ogg')
+		playsound(src, use_sound, 50, 0, preference = /datum/client_preference/emote_noises) //VOREStation Add
+
 		if(W.hitsound)
 			playsound(src, W.hitsound, 50, 1, -1)
 
