@@ -53,16 +53,16 @@ macro "borghotkeymode"
 	elem 
 		name = "SOUTH+REP"
 		command = ".movedown"
-	elem
+	elem 
 		name = "CTRL+SHIFT+NORTH"
 		command = "shiftnorth"
-	elem
+	elem 
 		name = "CTRL+SHIFT+SOUTH"
 		command = "shiftsouth"
-	elem
+	elem 
 		name = "CTRL+SHIFT+WEST"
 		command = "shiftwest"
-	elem
+	elem 
 		name = "CTRL+SHIFT+EAST"
 		command = "shifteast"
 	elem 
@@ -286,16 +286,16 @@ macro "macro"
 	elem 
 		name = "SOUTH+REP"
 		command = ".movedown"
-	elem
+	elem 
 		name = "CTRL+SHIFT+NORTH"
 		command = "shiftnorth"
-	elem
+	elem 
 		name = "CTRL+SHIFT+SOUTH"
 		command = "shiftsouth"
-	elem
+	elem 
 		name = "CTRL+SHIFT+WEST"
 		command = "shiftwest"
-	elem
+	elem 
 		name = "CTRL+SHIFT+EAST"
 		command = "shifteast"
 	elem 
@@ -465,16 +465,16 @@ macro "hotkeymode"
 	elem 
 		name = "SOUTH+REP"
 		command = ".movedown"
-	elem
+	elem 
 		name = "CTRL+SHIFT+NORTH"
 		command = "shiftnorth"
-	elem
+	elem 
 		name = "CTRL+SHIFT+SOUTH"
 		command = "shiftsouth"
-	elem
+	elem 
 		name = "CTRL+SHIFT+WEST"
 		command = "shiftwest"
-	elem
+	elem 
 		name = "CTRL+SHIFT+EAST"
 		command = "shifteast"
 	elem 
@@ -600,7 +600,7 @@ macro "hotkeymode"
 	elem 
 		name = "CTRL+Z"
 		command = "Activate-Held-Object"
-	elem
+	elem 
 		name = "U"
 		command = "Rest"
 	elem 
@@ -716,16 +716,16 @@ macro "borgmacro"
 	elem 
 		name = "SOUTH+REP"
 		command = ".movedown"
-	elem
+	elem 
 		name = "CTRL+SHIFT+NORTH"
 		command = "shiftnorth"
-	elem
+	elem 
 		name = "CTRL+SHIFT+SOUTH"
 		command = "shiftsouth"
-	elem
+	elem 
 		name = "CTRL+SHIFT+WEST"
 		command = "shiftwest"
-	elem
+	elem 
 		name = "CTRL+SHIFT+EAST"
 		command = "shifteast"
 	elem 
@@ -931,7 +931,7 @@ menu "menu"
 		category = "&Icons"
 		can-check = true
 		saved-params = "is-checked"
-	elem
+	elem 
 		name = "&Scaling"
 		command = ""
 		saved-params = "is-checked"
@@ -1182,21 +1182,24 @@ window "mainwindow"
 		size = 640x440
 		anchor1 = none
 		anchor2 = none
+		background-color = none
 		is-default = true
 		saved-params = "pos;size;is-minimized;is-maximized"
-		title = "VOREStation"
+		title = "FoB13"
 		is-maximized = true
-		icon = 'icons\\virgoicon.png'
+		icon = 'icons\\ss13_64.png'
 		macro = "macro"
 		menu = "menu"
+		outer-size = 1696x1036
+		inner-size = 1680x977
 	elem "asset_cache_browser"
 		type = BROWSER
 		pos = 0,0
 		size = 200x200
 		anchor1 = none
 		anchor2 = none
+		background-color = none
 		is-visible = false
-		auto-format = false
 		saved-params = ""
 	elem "hotkey_toggle"
 		type = BUTTON
@@ -1204,6 +1207,7 @@ window "mainwindow"
 		size = 80x20
 		anchor1 = 100,100
 		anchor2 = none
+		background-color = none
 		saved-params = ""
 		text = "Hotkey Toggle"
 		command = ".winset \"mainwindow.macro!=macro ? mainwindow.macro=macro hotkey_toggle.is-checked=false input.focus=true : mainwindow.macro=hotkeymode hotkey_toggle.is-checked=true mapwindow.map.focus=true\""
@@ -1214,6 +1218,7 @@ window "mainwindow"
 		size = 634x416
 		anchor1 = 0,0
 		anchor2 = 100,100
+		background-color = none
 		saved-params = "splitter"
 		right = "rpane"
 		is-vert = true
@@ -1233,6 +1238,7 @@ window "mainwindow"
 		size = 40x20
 		anchor1 = 100,100
 		anchor2 = none
+		background-color = none
 		saved-params = "is-checked"
 		text = "Chat"
 		command = ".winset \"saybutton.is-checked=true?input.command=\"!say \\\"\" macrobutton.is-checked=false:input.command=\""
@@ -1243,6 +1249,7 @@ window "mainwindow"
 		size = 999x999
 		anchor1 = none
 		anchor2 = none
+		background-color = none
 		is-visible = false
 		saved-params = ""
 
@@ -1273,7 +1280,7 @@ window "mapwindow"
 		saved-params = "icon-size"
 		on-show = ".winset\"mainwindow.mainvsplit.left=mapwindow\""
 		on-hide = ".winset\"mainwindow.mainvsplit.left=\""
-		style=".center { text-align: center; } .maptext { font-family: 'Small Fonts'; font-size: 7px; -dm-text-outline: 1px black; color: white; line-height: 1.1; } .small { font-size: 6px; } .big { font-size: 8px; } .reallybig { font-size: 8px; } .extremelybig { font-size: 8px; } .clown { color: #FF69Bf;} .tajaran {color: #803B56;} .skrell {color: #00CED1;} .solcom {color: #22228B;} .com_srus {color: #7c4848;} .zombie	{color: #ff0000;} .soghun {color: #228B22;} .vox {color: #AA00AA;} .diona {color: #804000; font-weight: bold;} .trinary {color: #727272;} .kidan {color: #664205;} .slime {color: #0077AA;} .drask {color: #a3d4eb;} .vulpkanin {color: #B97A57;} .abductor {color: #800080; font-style: italic;} .his_grace { color: #15D512; } .hypnophrase { color: #0d0d0d; font-weight: bold; } .yell { font-weight: bold; }"
+		style = ".center { text-align: center; } .maptext { font-family: 'Small Fonts'; font-size: 7px; -dm-text-outline: 1px black; color: white; line-height: 1.1; } .small { font-size: 6px; } .big { font-size: 8px; } .reallybig { font-size: 8px; } .extremelybig { font-size: 8px; } .clown { color: #FF69Bf;} .tajaran {color: #803B56;} .skrell {color: #00CED1;} .solcom {color: #22228B;} .com_srus {color: #7c4848;} .zombie\t{color: #ff0000;} .soghun {color: #228B22;} .vox {color: #AA00AA;} .diona {color: #804000; font-weight: bold;} .trinary {color: #727272;} .kidan {color: #664205;} .slime {color: #0077AA;} .drask {color: #a3d4eb;} .vulpkanin {color: #B97A57;} .abductor {color: #800080; font-style: italic;} .his_grace { color: #15D512; } .hypnophrase { color: #0d0d0d; font-weight: bold; } .yell { font-weight: bold; }"
 
 window "outputwindow"
 	elem "outputwindow"
@@ -1282,7 +1289,6 @@ window "outputwindow"
 		size = 640x480
 		anchor1 = none
 		anchor2 = none
-		background-color = none
 		saved-params = "pos;size;is-minimized;is-maximized"
 		titlebar = false
 		statusbar = false
@@ -1290,7 +1296,6 @@ window "outputwindow"
 		can-minimize = false
 		can-resize = false
 		is-pane = true
-		outer-size = 654x494
 	elem "chatloadlabel"
 		type = LABEL
 		pos = 0,0
@@ -1302,7 +1307,6 @@ window "outputwindow"
 		font-style = "bold"
 		text-color = #ffffff
 		background-color = #222222
-		is-visible = true
 		saved-params = ""
 		text = "Chat is loading.\nIf nothing happens after 20s,\nuse OOC > \"Reload VChat\"."
 	elem "htmloutput"
@@ -1311,25 +1315,20 @@ window "outputwindow"
 		size = 640x480
 		anchor1 = 0,0
 		anchor2 = 100,100
-		background-color = none
 		is-visible = false
 		saved-params = ""
-		auto-format = false
 	elem "oldoutput"
 		type = OUTPUT
 		pos = 0,0
 		size = 640x480
 		anchor1 = 0,0
 		anchor2 = 100,100
-		background-color = none
-		text-color = #000000
-		background-color = #ffffff
 		is-visible = false
 		is-default = true
-		style = ".system {color:#FF0000;}"
-		max-lines = 0
 		saved-params = ""
+		style = ".system {color:#FF0000;}"
 		enable-http-images = true
+		max-lines = 0
 
 window "rpane"
 	elem "rpane"
@@ -1501,6 +1500,7 @@ window "preferences_window"
 		anchor1 = 80,0
 		anchor2 = 100,100
 		right-click = true
+		saved-params = "zoom;letterbox;zoom-mode"
 
 window "infowindow"
 	elem "infowindow"
