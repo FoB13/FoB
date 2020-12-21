@@ -1291,7 +1291,7 @@
 			clear_alert("blind")
 
 		var/apply_nearsighted_overlay = FALSE
-		if(disabilities & NEARSIGHTED)	
+		if(disabilities & NEARSIGHTED)
 			apply_nearsighted_overlay = TRUE
 
 			if(glasses)

@@ -883,6 +883,9 @@ var/list/gamemode_cache = list()
 				if ("panic_bunker")
 					config.panic_bunker = 1
 
+				if("hub")
+					world.update_hub_visibility()
+
 				if ("paranoia_logging")
 					config.paranoia_logging = 1
 

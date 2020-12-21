@@ -11,6 +11,8 @@
 	var/muzzled = is_muzzled()
 	//var/m_type = 1
 
+	var/use_sound
+
 	for(var/obj/item/organ/O in organs)
 		for(var/obj/item/weapon/implant/I in O)
 			if(I.implanted)
@@ -44,7 +46,7 @@
 				param = null
 
 			var/display_msg = "beeps"
-			var/use_sound = 'sound/machines/twobeep.ogg'
+			use_sound = 'sound/machines/twobeep.ogg'
 			if(act == "buzz")
 				display_msg = "buzzes"
 				use_sound = 'sound/machines/buzz-sigh.ogg'
@@ -265,7 +267,6 @@
 								playsound(src, pick(species.male_cough_sounds), 120, preference = /datum/client_preference/emote_noises) //VOREStation Add
 					else
 						message = "emits a robotic cough"
-						var/use_sound
 						if(get_gender() == FEMALE)
 							use_sound = pick('sound/effects/mob_effects/f_machine_cougha.ogg','sound/effects/mob_effects/f_machine_coughb.ogg')
 						else
@@ -299,6 +300,11 @@
 				if(!muzzled)
 					message = "gasps!"
 					m_type = 2
+					if(get_gender() == FEMALE)
+						use_sound = pick('sound/people/gasp_female1.ogg','sound/people/gasp_female2.ogg','sound/people/gasp_female3.ogg','sound/people/gasp_female4.ogg','sound/people/gasp_female5.ogg','sound/people/gasp_female6.ogg','sound/people/gasp_female7.ogg')
+					else
+						use_sound = pick('sound/people/gasp_male1.ogg','sound/people/gasp_male2.ogg','sound/people/gasp_male3.ogg','sound/people/gasp_male4.ogg','sound/people/gasp_male5.ogg','sound/people/gasp_male6.ogg','sound/people/gasp_male7.ogg')
+					playsound(src, use_sound, 50, 0, preference = /datum/client_preference/emote_noises) //VOREStation Add
 				else
 					message = "makes a weak noise."
 					m_type = 2
@@ -475,7 +481,7 @@
 					message = "points to [M]."
 				else
 			m_type = 1
-			
+
 		if("crack")
 			if(!restrained())
 				message = "cracks [T.his] knuckles."
@@ -544,7 +550,6 @@
 						m_type = 2
 					else
 						message = "emits a robotic sneeze"
-						var/use_sound
 						if(get_gender() == FEMALE)
 							use_sound = 'sound/effects/mob_effects/machine_sneeze.ogg'
 						else
@@ -679,14 +684,15 @@
 				if(!muzzled)
 					message = "[species.scream_verb]!"
 					m_type = 2
-					/* Removed, pending the location of some actually good, properly licensed sounds.
 					if(get_gender() == FEMALE)
-						playsound(src, "[species.female_scream_sound]", 80, 1)
+						use_sound = pick('sound/people/Screams_Woman_1.ogg','sound/people/Screams_Woman_2.ogg')
 					else
-						playsound(src, "[species.male_scream_sound]", 80, 1) //default to male screams if no gender is present.
-					*/
+						use_sound = pick('sound/people/Screams_Male_1.ogg','sound/people/Screams_Male_2.ogg','sound/people/Screams_Male_3.ogg')
+					playsound(src, use_sound, 50, 0, preference = /datum/client_preference/emote_noises) //VOREStation Add
 				else
 					message = "makes a very loud noise."
+					use_sound = pick('sound/people/gagscream1.wav','sound/people/gagscream2.wav','sound/people/gagscream3.wav')
+					playsound(src, use_sound, 50, 0, preference = /datum/client_preference/emote_noises) //VOREStation Add
 					m_type = 2
 
 		if("snap", "snaps")

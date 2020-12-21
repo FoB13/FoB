@@ -847,19 +847,6 @@ var/datum/announcement/minor/admin_min_announcer = new
 	message_admins("[key_name_admin(usr)] toggled Dead OOC.", 1)
 	feedback_add_details("admin_verb","TDOOC") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
-/datum/admins/proc/togglehubvisibility()
-	set category = "Server"
-	set desc="Globally Toggles Hub Visibility"
-	set name="Toggle Hub Visibility"
-
-	if(!check_rights(R_ADMIN))
-		return
-
-	world.visibility = !(world.visibility)
-	log_admin("[key_name(usr)] toggled hub visibility.")
-	message_admins("[key_name_admin(usr)] toggled hub visibility.  The server is now [world.visibility ? "visible" : "invisible"] ([world.visibility]).", 1)
-	feedback_add_details("admin_verb","THUB") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc
-
 /datum/admins/proc/toggletraitorscaling()
 	set category = "Server"
 	set desc="Toggle traitor scaling"
@@ -946,7 +933,7 @@ var/datum/announcement/minor/admin_min_announcer = new
 	log_admin("[key_name(usr)] toggled persistence to [config.persistence_disabled ? "Off" : "On"].")
 	world.update_status()
 	feedback_add_details("admin_verb","TPD") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
-	
+
 /datum/admins/proc/togglemaploadpersistence()
 	set category = "Server"
 	set desc="Whether mapload persistent data will be saved from now on."
@@ -1612,3 +1599,24 @@ datum/admins/var/obj/item/weapon/paper/admin/faxreply // var to hold fax replies
 		qdel(P)
 		faxreply = null
 	return
+
+/////////
+// Hub Visibility
+/////////
+/datum/admins/proc/togglehubvisibility()
+	set category = "Server"
+	set desc="Globally Toggles Hub Visibility"
+	set name="Toggle Hub Visibility"
+
+	if(!check_rights(R_ADMIN))
+		return
+
+	//BYOND hates actually changing world.visibility at runtime, so let's just change if we give it the hub password.
+	world.update_hub_visibility() //proc defined in hub.dm
+	var/long_message = "toggled hub visibility. The server is now [GLOB.visibility_pref ? "visible" : "invisible"] ([GLOB.visibility_pref])."
+	if (GLOB.visibility_pref && !world.reachable)
+		message_admins("WARNING: The server will not show up on the hub because byond is detecting that a firewall is blocking incoming connections.")
+
+	log_and_message_admins(long_message)
+	feedback_add_details("admin_verb","THUB") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc
+//	SSbabysit.manual_delist = !SSbabysit.manual_delist //To be used in babysitter.dm, soon.

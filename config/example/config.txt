@@ -559,3 +559,6 @@ ENGINE_MAP Supermatter Engine,Edison's Bane
 ## Bans from the server anyone whose ckey is not in data/ckey_whitelist.txt the actual message is stored in /modules/admin/IsBanned.dm
 ## one ckey per line, in lowercase.
 # USECKEYWHITELIST
+
+## Hub visibility: If you want to be visible on the hub, uncomment the below line and be sure that Dream Daemon is set to "Visible." This can be changed in-round as well with toggle-hub-visibility if Dream Daemon is set correctly.
+# HUB

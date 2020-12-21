@@ -114,3 +114,6 @@
 
 /datum/species/proc/get_vision_flags(var/mob/living/carbon/human/H)
 	return vision_flags
+
+/datum/species/proc/get_radiation_mod(var/mob/living/carbon/human/H)
+	. = (H && H.isSynthetic() ? 0.5 : radiation_mod)
