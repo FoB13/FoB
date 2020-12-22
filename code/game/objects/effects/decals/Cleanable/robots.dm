@@ -50,3 +50,16 @@
 /obj/effect/decal/cleanable/blood/oil/streak
 	random_icon_states = list("mgibbl1", "mgibbl2", "mgibbl3", "mgibbl4", "mgibbl5")
 	amount = 2
+
+/////////
+// S L I P S
+/////////
+/obj/effect/decal/cleanable/blood/oil/Crossed(atom/movable/AM as mob|obj)
+	if(AM.is_incorporeal())
+		return
+	if(istype(AM, /mob/living))
+		if(prob(50))
+			return
+		else
+			var/mob/living/M =	AM
+			M.slip("the [src.name]",3)
